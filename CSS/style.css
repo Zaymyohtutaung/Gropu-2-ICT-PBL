@@ -1,0 +1,56 @@
+
+
+.header h1{
+    font-size: 50px;
+    color: darkgray;
+    text-align: center;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: rgb(23, 101, 101);
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: aquamarine;
+    padding: 14px 16px;
+    text-decoration: none;
+    animation-duration: 4s
+
+}
+
+.topnav a:hover{
+    
+    color: black;
+    background-color: cornflowerblue;
+    transform: rotate(-20deg);
+    width:80px;
+}
+
+.leftbody{
+    float: left;
+    width: 75%;
+    margin-top: 50px;
+}
+
+.leftbody {
+
+    width: 49%;
+    display: inline-block;
+
+}
+
+.rightbody {
+
+    width: 50%;
+    display: inline-block;
+}
+
+.heroimg {
+
+    width: 550px;
+    padding-left: 70px;
+
+}
