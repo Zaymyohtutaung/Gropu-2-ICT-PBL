@@ -1,14 +1,20 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+body{
+    background-color: rgb(241, 219, 211);
+}
 
 .header h1{
     font-size: 50px;
-    color: darkgray;
+    color: rgb(225, 119, 119);
     text-align: center;
 }
 
 .topnav{
     overflow: hidden;
-    background-color: rgb(23, 101, 101);
+    background-color: rgb(63, 182, 182);
 }
 
 .topnav a{
@@ -25,7 +31,7 @@
     
     color: black;
     background-color: cornflowerblue;
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
     width:80px;
 }
 
@@ -50,7 +56,30 @@
 
 .heroimg {
 
-    width: 550px;
+    width: 650px;
     padding-left: 70px;
 
+}
+
+.para{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 25px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.parahead{
+    margin-top: 50px;
+    margin-left: 30px;
+    color: cadetblue;
+    font-size: 50px;
+}
+
+.heroimg2{
+    margin-top: 150px;
+    margin-left: 70px;
+    width: 650px;
+   
 }
