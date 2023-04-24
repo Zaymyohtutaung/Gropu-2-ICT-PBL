@@ -15,6 +15,7 @@ body{
 .topnav{
     overflow: hidden;
     background-color: rgb(63, 182, 182);
+    height: 50px;
 }
 
 .topnav a{
@@ -78,8 +79,63 @@ body{
 }
 
 .heroimg2{
-    margin-top: 150px;
     margin-left: 70px;
     width: 650px;
-   
 }
+
+.rightbody{
+    float: right;
+    width: 75%;
+    margin-top: 50px;
+}
+
+.rightbody {
+    width: 49%;
+    display: inline-block;
+
+}
+
+.card{
+    background-color: antiquewhite;
+    width: 20%;
+    height: 270px;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 6px gray;
+    text-align:center;
+    display: inline-block;
+    margin-right: 100px; 
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.service{
+    padding-left: 150px;
+    display: inline-block;
+}
+
+.cardimg{
+    margin-top: 20px;
+    width: 70px;
+}
+
+.cardtext{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.cardpara{
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
