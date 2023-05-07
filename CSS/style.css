@@ -1,11 +1,11 @@
 *{
+
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body{
-    background-color: rgb(241, 219, 211);
+    background-color: rgb(241, 219, 211)
 }
-
 .header h1{
     font-size: 50px;
     color: rgb(225, 119, 119);
@@ -216,6 +216,11 @@ input[type=submit]:hover {
     width: 49%;
     display: inline-block;
 
+}
+
+footer{
+    text-align:  center;
+    padding: 1em 0 1em 0    ;
 }
 
   

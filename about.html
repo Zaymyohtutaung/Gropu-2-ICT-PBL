@@ -28,9 +28,8 @@ body{
 }
 
 .topnav{
-    overflow: hidden;
     background-color: rgb(63, 182, 182);
-    height: 50px;
+    height: 70px;
 }
 
 .topnav a{
@@ -88,6 +87,53 @@ body{
     margin-bottom: 20px;
 }
 
+.about{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.body2{
+    height: 95vh;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+main{
+    padding: 3em 0 3em 0;
+    flex: 5 5 150px;
+}
+
+.right{
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px ;
+}
+
+footer{
+    padding: 1em 0 1em 0    ;
+}
+
+@media all and (max-width:550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5 em 0;
+    }
+}
 </style>
 
 <body>
@@ -104,35 +150,63 @@ body{
 
     <div class="profile">
         <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/5062/5062832.png" class="cardimg" alt="">
+            <img src="./img/Boy.png" class="cardimg" alt="">
             <h3 class="cardtext">Zaymyohtutaung</h3>
-            <p class="cardpara">Main website</p>
+            <p class="cardpara">Website desingner</p>
         </div>
 
         <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/5062/5062832.png" class="cardimg" alt="">
+            <img src="./img/Boy.png" class="cardimg" alt="">
             <h3 class="cardtext">Ye Phone Thant</h3>
-            <p class="cardpara">Main powerpoint</p>
+            <p class="cardpara">Powerpoint desingner</p>
         </div>
   
         <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/5062/5062832.png" class="cardimg" alt="">
+            <img src="./img/Boy.png" class="cardimg" alt="">
             <h3 class="cardtext">Phone Htet San</h3>
             <p class="cardpara">Do both</p>
         </div>
 
         <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/5062/5062832.png" class="cardimg" alt="">
+            <img src="./img/Girl.png" class="cardimg" alt="">
             <h3 class="cardtext">Zar Chi Lin</h3>
             <p class="cardpara">Information finder</p>
         </div>
-
     </div>
 
+    <br>
+    <hr>
 
-            
-            
-        
-    
+</body>
+
+<body class="body2">
+    <div class="main">
+        <aside class="left">
+            <img src="https://media.istockphoto.com/id/635732164/photo/realize-your-interior-dream-mixed-media.jpg?s=612x612&w=0&k=20&c=y9ZeXix7TgOqgsXqlVm0TTjBH57wSIMtAF7EqYAiWOg=" alt="" width="450px"    height="100%">
+        </aside>
+        <main>
+            <div class="about">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo laudantium, exercitationem ut debitis eaque facilis doloremque at dolorem voluptatibus iure,
+                labore unde. Amet, quae ipsam omnis nisi dignissimos repellendus recusandae reprehenderit similique incidunt consectetur molestiae unde, officiis illo dolorum
+                fugiat consequuntur sequi ullam vel nemo eveniet nobis eum necessitatibus perferendis. Adipisci minus consequatur sapiente fugiat distinctio incidunt
+                dignissimos, minima consectetur magnam accusantium tempora quia quisquam in sit vitae autem! Quaerat sint ullam saepe est natus inventore iusto eveniet fuga,
+                reprehenderit consequatur adipisci officiis error atque neque distinctio magnam autem similique eligendi! Expedita sed doloremque tenetur autem nesciunt 
+                    quo dignissimos quos.</p>
+            </div>
+        </main>
+        <aside class="right">
+            <img src="https://ueuromed.org/sites/default/files/2020-04/architecte-euromed-fes-1.jpeg" alt="" width="450px"    height="100%">
+        </aside>
+    </div>
+    <footer>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-circle-info"></i>
+        <i class="fa-solid fa-folder"></i>
+
+        <p>Copyright © 2023 Decoratering Life Inc. All rights reserved</p>
+    </footer>
+
+
 </body>
 </html>
