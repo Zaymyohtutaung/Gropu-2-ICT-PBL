@@ -5,13 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archiratering life</title>
-    <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://kit.fontawesome.com/07010b495d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 
 </head>
+
+<style>
+    *{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(104, 100, 100, 0.75), rgba(112, 104, 104, 0.75)), url(https://i.guim.co.uk/img/media/9a5b7240da87917611f121ab5350d3b951e409e7/0_170_5885_3530/master/5885.jpg?width=1200&quality=85&auto=format&fit=max&s=778742b3b3e2ac5c66e43c259ee58674);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.header h1{
+    font-size: 50px;
+    color: rgb(225, 119, 119);
+    text-align: center;
+}
+
+.topnav{
+    background-color: rgb(63, 182, 182);
+    height: 50px;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: aquamarine;
+    padding: 14px 16px;
+    text-decoration: none;
+    animation-duration: 4s
+
+}
+
+.topnav a:hover{
+    
+    color: black;
+    background-color: cornflowerblue;
+    transform: rotate(-10deg);
+    width:80px;
+}
+
+.leftbody{
+    float: left;
+    width: 75%;
+    margin-top: 50px;
+}
+
+.leftbody {
+
+    width: 49%;
+    display: inline-block;
+
+}
+
+.rightbody{
+    float: right;
+    width: 75%;
+    margin-top: 50px;
+}
+
+.rightbody {
+    width: 49%;
+    display: inline-block;
+
+}
+
+.heroimg{
+    width: 650px;
+    padding-left: 75px;
+}
+
+.herotext{
+    font-size: 30px;
+}
+
+.card{
+    background-color: antiquewhite;
+    width: 200px;
+    height: 270px;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 6px gray;
+    text-align:center;
+    display: inline-block;
+    margin-right: 100px; 
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.service{
+    padding-left: 150px;
+    display: inline-block;
+    margin-left: 20px ;
+}
+
+.cardimg{
+    margin-top: 20px;
+    width: 70px;
+}
+
+.cardtext{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.cardpara{
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.head1{
+    text-align: center;
+    margin-top: 550px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    background-color: aqua;
+}
+
+</style>
 <body>
 
     <div class="header">
@@ -24,6 +154,50 @@
         <a href="service.html">Service</a>
         <a href="contact.html">Contact</a>
     </div>
+
+
+    <div class="row">
+
+        <div class="leftbody">
+            <img src="https://www.thespruce.com/thmb/UJjig9m6UXBmnHvi1csMS5Z_FzQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Buildingdesigns-GettyImages-912482942-db55b3af711044a3a42ad1040c6711a9.jpg" alt="" class="heroimg">
+        </div>
+       
+
+        <div class="rightbody">
+           <h1>Our Services</h1>
+           <br><br>
+           <p class="herotext">We will provide knowledge about architecture and engineering for the people who want to expreience and learn them</p>
+        </div>
+
+    </div>
+
+    <h1 class="head1">Our Service</h1>
+    
+    <div class="service">
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5935/5935741.png" class="cardimg" alt="">
+            <h3 class="cardtext">Architecture</h3>
+            <p class="cardpara">This will provide you with the knowledge and skill of architecture </p>
+            <button class="btn">More...</button>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4538/4538996.png" class="cardimg" alt="">
+            <h3 class="cardtext">Engineering</h3>
+            <p class="cardpara">This will provide you with the knowledge and skill of engineering</p>
+            <button class="btn">More...</button>
+        </div>
+  
+        <div class="card">
+            <img src="./img/Boy.png" class="cardimg" alt="">
+            <h3 class="cardtext">Phone Htet San</h3>
+            <p class="cardpara">Do both</p>
+            <button class="btn">More...</button>
+        </div>
+
+    </div>
+
+
 
 </body>
 </html>

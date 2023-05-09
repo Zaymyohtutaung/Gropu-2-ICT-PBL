@@ -4,7 +4,11 @@
 }
 
 body{
-    background-color: rgb(241, 219, 211)
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(104, 100, 100, 0.75), rgba(112, 104, 104, 0.75)), url(https://news.harvard.edu/wp-content/uploads/2020/10/architecture-1857175_1920_2500-1200x800.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .header h1{
     font-size: 50px;
@@ -48,8 +52,6 @@ body{
     display: inline-block;
 
 }
-
-
 
 .heroimg {
 
