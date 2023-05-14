@@ -1,72 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archiratering life</title>
-    <script src="https://kit.fontawesome.com/07010b495d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-
-</head>
-
+<title>Archiratering Life</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/07010b495d.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
 <style>
-    *{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(104, 100, 100, 0.75), rgba(112, 104, 104, 0.75)), url(https://prod-discovery.edx-cdn.org/media/course/image/5c021144-def2-4cc1-936f-4626828f2198-65a74bcd4e23.jpg);
-    background-size: cover;
-    background-position: center;
+body {
+  color: white;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(104, 100, 100, 0.75), rgba(112, 104, 104, 0.75)), url(https://news.harvard.edu/wp-content/uploads/2020/10/architecture-1857175_1920_2500-1200x800.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.header h1{
-    font-size: 50px;
-    color: rgb(225, 119, 119);
-    text-align: center;
+.header {
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
-.topnav{
-    background-color: rgb(63, 182, 182);
-    height: 70px;
-}
-
-.topnav a{
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
     float: left;
     display: block;
-    color: aquamarine;
+    color: #f2f2f2;
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    animation-duration: 4s
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
 }
 
-.topnav a:hover{
-    
-    color: black;
-    background-color: cornflowerblue;
-    transform: rotate(-10deg);
-    width:80px;
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.herotext{
+  text-align: center;
+  font-size: 24px;
+  border: 2px 2px black;
+  border-style: solid;
+  text-shadow: 5px 5px 5px black;
 }
 
 .card{
     background-color: antiquewhite;
     width: 17%;
     height: 270px;
+    margin-right: 100px; 
+    margin-top: 75px;
+    margin-left: 16px;
+    color: black;
     border-radius: 30px;
-    margin-top: 30px;
     border: 2px solid black;
     box-shadow: 10px 10px 6px gray;
     text-align:center;
     display: inline-block;
-    margin-right: 100px; 
-    margin-top: 150px;
-    margin-left: 14px;
+
 }
 
 .profiles{
@@ -77,140 +109,83 @@ body{
 
 .cardimg{
     margin-top: 20px;
-    width: 100px;
+    width: 150px;
 }
 
 .cardtext{
     font-family: sans-serif;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
-.cardpara{
-    font-family: sans-serif;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
 
-.about{
+.footer {
+    padding: 20px;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.body2{
-    height: 95vh;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-.left{
-    padding: 3em 0 3em 0;
-    flex: 1 1 100px;
-}
-
-.main{
-    display: flex;
-    flex: 1;
-}
-
-main{
-    padding: 3em 0 3em 0;
-    flex: 5 5 150px;
-}
-
-.right{
-    padding: 3em 0 3em 0;
-    flex: 1 1 100px ;
-}
-
-footer{
-    padding: 1em 0 1em 0    ;
-}
-
-@media all and (max-width:550px){
-    .main{
-        flex-direction: column;
-    }
-    main{
-        padding: 5em 0 5 em 0;
-    }
-}
+    background: #615c5c;
+    margin-top: 20px;
+  }
 </style>
-
+</head>
 <body>
-    <div class="header">
-        <h1>Archiratering life</h1>
 
-    </div>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="service.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </div>
+<div class="header">
+    <a href="index.html">
+        <img src="./image/MicrosoftTeams-image (4).png" alt="Logo" width="75px" height="50px">
+    </a>
+  <h1>Archiratering Life</h1>
+</div>
 
-    <div class="profile">
-        <div class="card">
-            <img src="./img/Boy.png" class="cardimg" alt="">
-            <h3 class="cardtext">Zaymyohtutaung</h3>
-            <p class="cardpara">Website desingner</p>
-        </div>
+<div class="topnav">
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./service.html">Service</a>
+    <a href="./contact.html">Contact</a>
+  </div>
 
-        <div class="card">
-            <img src="./img/Boy.png" class="cardimg" alt="">
-            <h3 class="cardtext">Ye Phone Thant</h3>
-            <p class="cardpara">Powerpoint desingner</p>
-        </div>
+<div class="row">
+  <div class="column side">
+    <img src="https://img.freepik.com/premium-photo/luxury-house-architecture-drawing-sketch-plan-blueprint_691560-6473.jpg" alt="" width="100%" height="500px">
+  </div>
   
-        <div class="card">
-            <img src="./img/Boy.png" class="cardimg" alt="">
-            <h3 class="cardtext">Phone Htet San</h3>
-            <p class="cardpara">Do both</p>
-        </div>
+  <div class="column middle">
+    <h2>About Us</h2>
+    <p class="herotext">Architecture, the art and technique of designing and building, as distinguished from the skills associated with construction. The practice of architecture is employed to fulfill both practical and expressive requirements, and thus it serves both utilitarian and aesthetic ends. Although these two ends may be distinguished, they cannot be separated, and the relative weight given to each can vary widely.</p>
+    <p class="herotext">So we are here to help you through out your journey and road to the goal of success and for you to imbodies the feeling that you have achived something. That is what our goal for the future and the success of your journey of learning architecture and engineering.</p>
+  </div>
+  
+  <div class="column side">
+     <img src="https://luxurycolumnist.com/wp-content/uploads/2022/02/Oscar-Niemeyer-International-Cultural-Centre-Asturias-Most-Famous-Architects.jpg" width="100%" height="500px" alt="">
+  </div>
+</div>
 
-        <div class="card">
-            <img src="./img/Girl.png" class="cardimg" alt="">
-            <h3 class="cardtext">Zar Chi Lin</h3>
-            <p class="cardpara">Information finder</p>
-        </div>
+<h1 style="text-align: center;">Our Group Members</h1>
+
+<div class="profile">
+    <div class="card">
+        <img src="./image/Zaymyo.png" class="cardimg" alt="">
+        <h3 class="cardtext">Zaymyohtutaung</h3>
     </div>
 
-    <br>
-    <hr>
-
-</body>
-
-<body class="body2">
-    <div class="main">
-        <aside class="left">
-            <img src="https://media.istockphoto.com/id/635732164/photo/realize-your-interior-dream-mixed-media.jpg?s=612x612&w=0&k=20&c=y9ZeXix7TgOqgsXqlVm0TTjBH57wSIMtAF7EqYAiWOg=" alt="" width="450px"    height="100%">
-        </aside>
-        <main>
-            <div class="about">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo laudantium, exercitationem ut debitis eaque facilis doloremque at dolorem voluptatibus iure,
-                labore unde. Amet, quae ipsam omnis nisi dignissimos repellendus recusandae reprehenderit similique incidunt consectetur molestiae unde, officiis illo dolorum
-                fugiat consequuntur sequi ullam vel nemo eveniet nobis eum necessitatibus perferendis. Adipisci minus consequatur sapiente fugiat distinctio incidunt
-                dignissimos, minima consectetur magnam accusantium tempora quia quisquam in sit vitae autem! Quaerat sint ullam saepe est natus inventore iusto eveniet fuga,
-                reprehenderit consequatur adipisci officiis error atque neque distinctio magnam autem similique eligendi! Expedita sed doloremque tenetur autem nesciunt 
-                    quo dignissimos quos.</p>
-            </div>
-        </main>
-        <aside class="right">
-            <img src="https://ueuromed.org/sites/default/files/2020-04/architecte-euromed-fes-1.jpeg" alt="" width="450px"    height="100%">
-        </aside>
+    <div class="card">
+        <img src="./image/Ye Phone.png" class="cardimg" alt="">
+        <h3 class="cardtext">Ye Phone Thant</h3>
     </div>
-    <footer>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-solid fa-circle-info"></i>
-        <i class="fa-solid fa-folder"></i>
 
-        <p>Copyright © 2023 Decoratering Life Inc. All rights reserved</p>
-    </footer>
+    <div class="card">
+        <img src="./image/Phone Htet.png" class="cardimg" alt="" style="padding-top: 15px;">
+        <h3 class="cardtext">Phone Htet San</h3>
+    </div>
 
+    <div class="card">
+        <img src="./image/Zar Chi.png" class="cardimg" alt="" >
+        <h3 class="cardtext">Zar Chi Lin</h3>
+    </div>
+</div>
 
+<div class="footer">
+
+  <p>Copyright © 2023 Archiratering Life Inc. All rights reserved</p>
+</div>
+  
 </body>
 </html>

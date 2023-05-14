@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archiratering life</title>
     <script src="https://kit.fontawesome.com/07010b495d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
 </head>
 
 <style>
@@ -19,34 +17,33 @@
     background-size: cover;
     background-position: center;
 }
+
+.header{
+  text-align: center;
+}
   .header h1{
     font-size: 50px;
-    color: rgb(225, 119, 119);
+    color: black;
     text-align: center;
 }
-  .topnav{
+ .topnav {
     overflow: hidden;
-    background-color: rgb(63, 182, 182);
-    height: 50px;
-}
+    background-color: #333;
+  }
 
-.topnav a{
+  .topnav a {
     float: left;
     display: block;
-    color: aquamarine;
+    color: #f2f2f2;
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    animation-duration: 4s
-
-}
-
-.topnav a:hover{
-    
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
     color: black;
-    background-color: cornflowerblue;
-    transform: rotate(-10deg);
-    width:80px;
-}
+  }
   input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -59,7 +56,7 @@
   
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #7ee681;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -69,7 +66,7 @@ input[type=submit] {
   }
   
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #a2dca4;
   }
 
 .forms{
@@ -81,6 +78,9 @@ input[type=submit]:hover {
 </style>
 <body>
     <div class="header">
+      <a href="index.html">
+        <img src="./image/MicrosoftTeams-image (4).png" alt="Logo" width="75px" height="50px">
+    </a> 
         <h1>Archiratering life</h1>
     </div>
 
@@ -363,7 +363,8 @@ input[type=submit]:hover {
             
           </select>
         
-          <input type="submit" value="Submit">
+          <input type="submit" value="Login">
+          <input type="submit" value="Sign up">
         </form>
       </div>
       

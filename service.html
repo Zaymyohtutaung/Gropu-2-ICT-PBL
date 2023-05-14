@@ -1,113 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archiratering life</title>
-    <script src="https://kit.fontawesome.com/07010b495d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-
-</head>
-
+<title>Archiratering Life</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/07010b495d.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <style>
-    *{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(104, 100, 100, 0.75), rgba(112, 104, 104, 0.75)), url(https://i.guim.co.uk/img/media/9a5b7240da87917611f121ab5350d3b951e409e7/0_170_5885_3530/master/5885.jpg?width=1200&quality=85&auto=format&fit=max&s=778742b3b3e2ac5c66e43c259ee58674);
-    background-size: cover;
-    background-position: center;
+body {
+  color: white;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(104, 100, 100, 0.75), rgba(112, 104, 104, 0.75)), url(https://blog.herzing.ca/hubfs/Imported_Blog_Media/computer-aided-design-and-drafting-courses-1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-
-.header h1{
-    font-size: 50px;
-    color: rgb(225, 119, 119);
+/* Style the header */
+.header {
+    color: black;
+    padding: 30px;
     text-align: center;
-}
-
-.topnav{
-    background-color: rgb(63, 182, 182);
-    height: 50px;
-}
-
-.topnav a{
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
     float: left;
     display: block;
-    color: aquamarine;
+    color: #f2f2f2;
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    animation-duration: 4s
-
-}
-
-.topnav a:hover{
-    
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
     color: black;
-    background-color: cornflowerblue;
-    transform: rotate(-10deg);
-    width:80px;
+  }
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
 }
 
-.leftbody{
-    float: left;
-    width: 75%;
-    margin-top: 50px;
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.leftbody {
-
-    width: 49%;
-    display: inline-block;
-
-}
-
-.rightbody{
-    float: right;
-    width: 75%;
-    margin-top: 50px;
-}
-
-.rightbody {
-    width: 49%;
-    display: inline-block;
-
-}
-
-.heroimg{
-    width: 650px;
-    padding-left: 75px;
-}
-
-.herotext{
-    font-size: 30px;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 .card{
-    background-color: antiquewhite;
-    width: 200px;
+    background-color: rgb(237, 237, 183);
+    width: 300px;
     height: 270px;
+    margin-right: 100px; 
+    margin-left: 150px;
+    color: black;
     border-radius: 30px;
     margin-top: 30px;
     border: 2px solid black;
     box-shadow: 10px 10px 6px gray;
     text-align:center;
     display: inline-block;
-    margin-right: 100px; 
-    margin-top: 100px;
-    margin-left: 80px;
+
 }
 
 .service{
     padding-left: 150px;
     display: inline-block;
-    margin-left: 20px ;
+    margin-left: 50px ;
 }
 
 .cardimg{
@@ -127,7 +117,7 @@ body{
 }
 .head1{
     text-align: center;
-    margin-top: 550px;
+
 }
 
 .btn {
@@ -141,63 +131,268 @@ body{
     background-color: aqua;
 }
 
+.herotext{
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    margin-top: 125px;
+}
+.pricing-plan{
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0.2);
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555555;
+  margin: 15px;
+  background-color: white;
+}
+
+.paricing-plan--highlighted{
+  box-shadow: 0 0 15px rgba(0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.pricing-plan__special-text{
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  background: #007c64;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.pricing-plan__header{
+  padding: 25px;
+  background-color: #009578;
+  color: white;
+}
+
+.pricing-plan__summary{
+  margin: 0;
+  text-align: center;
+}
+
+.pricing-plan___title{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.pricing-plan__summary{
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.pricing-plan__description{
+  padding: 25px;
+}
+
+.pricing-plan__list{
+  padding: 0;
+  margin: 0;
+
+}
+
+.pricing-plan__feature{
+  list-style: none;
+  margin: 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.9em;
+}
+
+.pricing-plan__feature:not(:last-child){
+  margin-bottom: 0.5em;
+}
+
+.pricing-plan__feature::before{
+  content: \2714;
+  color: #009578;
+  position: absolute;
+  left: 0;
+}
+
+.pricing-plan__actions{
+  padding: 25px;
+  border-top: 1px #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-plan__button{
+  display: inline-block;
+  margin: 15px auto;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #009578;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #009578;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+}
+
+.pricing-plan__button:hover{
+  background-color: #009578;
+  color: #ffffff;
+}
+
+.pricing-plan__cost{
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: #000000;
+}
+
+.pricing-plan__text{
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.pricing-plan-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
 </style>
+</head>
 <body>
 
-    <div class="header">
-        <h1>Archiratering life</h1>
-    </div>
+<div class="header">
+    <a href="index.html">
+        <img src="./image/MicrosoftTeams-image (4).png" alt="Logo" width="75px" height="50px">
+    </a>
+  <h1>Archiratering Life</h1>
+</div>
 
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="service.html">Service</a>
-        <a href="contact.html">Contact</a>
-    </div>
+<div class="topnav">
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./service.html">Service</a>
+    <a href="./contact.html">Contact</a>
+  </div>
 
-
-    <div class="row">
-
-        <div class="leftbody">
-            <img src="https://www.thespruce.com/thmb/UJjig9m6UXBmnHvi1csMS5Z_FzQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Buildingdesigns-GettyImages-912482942-db55b3af711044a3a42ad1040c6711a9.jpg" alt="" class="heroimg">
-        </div>
-       
-
-        <div class="rightbody">
-           <h1>Our Services</h1>
-           <br><br>
-           <p class="herotext">We will provide knowledge about architecture and engineering for the people who want to expreience and learn them</p>
-        </div>
-
-    </div>
-
-    <h1 class="head1">Our Service</h1>
-    
-    <div class="service">
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/5935/5935741.png" class="cardimg" alt="">
-            <h3 class="cardtext">Architecture</h3>
-            <p class="cardpara">This will provide you with the knowledge and skill of architecture </p>
-            <button class="btn">More...</button>
-        </div>
-
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/4538/4538996.png" class="cardimg" alt="">
-            <h3 class="cardtext">Engineering</h3>
-            <p class="cardpara">This will provide you with the knowledge and skill of engineering</p>
-            <button class="btn">More...</button>
-        </div>
+<div class="row">
+  <div class="column">
+    <img src="https://www.thespruce.com/thmb/UJjig9m6UXBmnHvi1csMS5Z_FzQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Buildingdesigns-GettyImages-912482942-db55b3af711044a3a42ad1040c6711a9.jpg" alt="" width="100%" style="box-shadow: 5px 5px 5px 5px gray
+    ;" >
+  </div>
   
-        <div class="card">
-            <img src="./img/Boy.png" class="cardimg" alt="">
-            <h3 class="cardtext">Phone Htet San</h3>
-            <p class="cardpara">Do both</p>
-            <button class="btn">More...</button>
-        </div>
+  <div class="column">
+    <p class="herotext">We will provide knowledge about architecture and engineering for the people who want to expreience and learn them. We will assist you in your learning and help you along in your journey.</p>
+  </div>
+  
+</div>
 
+<h1 class="head1">Our Service</h1>
+
+<div class="service">
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5935/5935741.png" class="cardimg" alt="">
+        <h3 class="cardtext">Architecture</h3>
+        <p class="cardpara">This will provide you with the knowledge and skill of architecture </p>
+        <button class="btn">More...</button>
     </div>
 
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4538/4538996.png" class="cardimg" alt="">
+        <h3 class="cardtext">Engineering</h3>
+        <p class="cardpara">This will provide you with the knowledge and skill of engineering</p>
+        <button class="btn">More...</button>
+    </div>
+
+</div>
+
+<h1 style="text-align: center;">Special offer</h1>
+
+<div class="discount">
+  <img src="./image/poster.png" alt="" width="30%" style="margin-left: 525px;">
+  <br>
+</div>
+<br> <br>
+  <div class="pricing-plan-container">
+    <section class="pricing-plan">
+      <div class="pricing-plan__header">
+      <h1 class="pricing-plan__title" style="text-align: center;">Beginner Plan</h1>
+      <h2 class="pricing-plan__summary" style="text-align: center;">For those who are new to architecture and engineering</h2>
+    </div>
+    <div class="pricing-plan__description">
+     <ul class="pricing-plan__list">
+        <li class="pricing-plan__feature">Access to all meterials</li>
+        <li class="pricing-plan__feature">Access 5 lessons per day</li>
+        <li class="pricing-plan__feature">Learn the Basic</li>
+      </ul>
+    </div>
+    <div class="pricing-plan__actions">
+      <p class="pricing-plan__cost">$59</p>
+      <p class="pricing-plan__text">Per Month</p>
+      <a href="./" class="pricing-plan__button">Purchase</a>
+      <p class="pricing-plan__text">30Days money back-guarantee</p>
+    </div>
+    </section>
+      <section class="pricing-plan paricing-plan--highlighted">
+        <div class="pricing-plan__special-text">Special</div>
+          <div class="pricing-plan__header">
+          <h1 class="pricing-plan__title" style="text-align: center;">Intermediate Plan</h1>
+          <h2 class="pricing-plan__summary" style="text-align: center;">For those who are intermediate to architecture and engineering</h2>
+        </div>
+        <div class="pricing-plan__description">
+         <ul class="pricing-plan__list">
+            <li class="pricing-plan__feature">Access to all meterials</li>
+            <li class="pricing-plan__feature">Access 10 lessons per day</li>
+            <li class="pricing-plan__feature">Learn the intermediate</li>
+          </ul>
+        </div>
+        <div class="pricing-plan__actions">
+          <p class="pricing-plan__cost"> <s>$100</s> $80</p>
+          <p class="pricing-plan__text">Per Month</p>
+          <a href="./" class="pricing-plan__button">Purchase</a>
+          <p class="pricing-plan__text">30Days money back-guarantee</p>
+        </div>
+      </section>
+      <section class="pricing-plan">
+          <div class="pricing-plan__header">
+          <h1 class="pricing-plan__title" style="text-align: center;">Advance Plan</h1>
+          <h2 class="pricing-plan__summary" style="text-align: center;">For those who are advance to architecture and engineering</h2>
+        </div>
+        <div class="pricing-plan__description">
+         <ul class="pricing-plan__list">
+            <li class="pricing-plan__feature">Access to all meterials</li>
+            <li class="pricing-plan__feature">Access unlimited lessons per day</li>
+            <li class="pricing-plan__feature">Learn the Advance</li>
+          </ul>
+        </div>
+        <div class="pricing-plan__actions">
+          <p class="pricing-plan__cost">$129</p>
+          <p class="pricing-plan__text">Per Month</p>
+          <a href="./" class="pricing-plan__button">Purchase</a>
+          <p class="pricing-plan__text">30Days money back-guarantee</p>
+        </div>
+      </section>
+  </div>
+
+
+
+<div class="footer">
+
+  <p>Copyright © 2023 Archiratering Life Inc. All rights reserved</p>
+</div>
 
 
 </body>
 </html>
+
+
