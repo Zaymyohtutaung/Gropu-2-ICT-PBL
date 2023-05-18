@@ -9,6 +9,8 @@
 <style>
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -16,18 +18,21 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
+  font-family: Arial;
   background-image: linear-gradient(rgba(104, 100, 100, 0.75), rgba(112, 104, 104, 0.75)), url(https://news.harvard.edu/wp-content/uploads/2020/10/architecture-1857175_1920_2500-1200x800.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .header {
-  color: black;
-  padding: 20px;
-  text-align: center;
-  font-size: 30px;
-}
-
+    padding: 30px;
+    text-align: center;
+    color: black;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -46,7 +51,6 @@ body {
     background-color: #ddd;
     color: black;
   }
-
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
@@ -83,6 +87,7 @@ body {
   border: 2px 2px black;
   border-style: solid;
   text-shadow: 5px 5px 5px black;
+  padding: 20px;
 }
 
 .card{
@@ -92,12 +97,13 @@ body {
     margin-right: 100px; 
     margin-top: 75px;
     margin-left: 16px;
-    color: black;
-    border-radius: 30px;
     border: 2px solid black;
     box-shadow: 10px 10px 6px gray;
     text-align:center;
     display: inline-block;
+    color: black;
+    border-radius: 30px;
+   
 
 }
 
@@ -118,11 +124,75 @@ body {
 }
 
 
-.footer {
-    padding: 20px;
+  /* Footer */
+  footer {
+    background-color: rgb(95, 105, 116);
+    height: 25%;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    margin-top: 30px;
+  }
+
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    background: #615c5c;
-    margin-top: 20px;
+  }
+
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: capitalize;
+  }
+
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .socials li{
+    margin: 0 10px;
+  }
+
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  }
+
+  .socials a:hover i{
+    color: lightblue;
+  }
+
+  .footer-bottom{
+    background-color: rgb(114, 112, 112);
+    width: 100vw;
+    padding: 20px 0 ;
+    text-align: center;
+  }
+
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
   }
 </style>
 </head>
@@ -182,10 +252,23 @@ body {
     </div>
 </div>
 
-<div class="footer">
+<footer>
+  <div class="footer-content">
+    <h3>Archiratering Life</h3>
 
-  <p>Copyright © 2023 Archiratering Life Inc. All rights reserved</p>
-</div>
+    <ul class="socials">
+      <li><i class="fa-brands fa-facebook"></i></li>
+      <li><i class="fa-brands fa-twitter"></i></li>
+      <li><i class="fa-brands fa-tiktok"></i></li>
+      <li><i class="fa-brands fa-discord"></i></li>
+      <li><i class="fa-brands fa-instagram"></i></li>
+    </ul>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2023 Archiratering Life Inc. All rights reserved</p>
+  </div>
+</footer>
   
 </body>
 </html>

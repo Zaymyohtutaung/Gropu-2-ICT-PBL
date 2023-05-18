@@ -12,6 +12,8 @@
 <style>
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -19,6 +21,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
+  font-family: Arial;
   background-image: linear-gradient(rgba(104, 100, 100, 0.75), rgba(112, 104, 104, 0.75)), url(https://blog.herzing.ca/hubfs/Imported_Blog_Media/computer-aided-design-and-drafting-courses-1.jpg);
   background-size: cover;
   background-position: center;
@@ -41,7 +44,6 @@ body {
     background-color: #333;
   }
   
-  /* Style the topnav links */
   .topnav a {
     float: left;
     display: block;
@@ -51,7 +53,6 @@ body {
     text-decoration: none;
   }
   
-  /* Change color on hover */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
@@ -260,10 +261,74 @@ body {
   padding: 10px;
 }
 
-.footer {
-    padding: 20px;
+  /* Footer */
+  footer {
+    background-color: rgb(95, 105, 116);
+    height: 25%;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+  }
+
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    margin-top: 20px;
+  }
+
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: capitalize;
+  }
+
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .socials li{
+    margin: 0 10px;
+  }
+
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  }
+
+  .socials a:hover i{
+    color: lightblue;
+  }
+
+  .footer-bottom{
+    background-color: rgb(114, 112, 112);
+    width: 100vw;
+    padding: 20px 0 ;
+    text-align: center;
+  }
+
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
   }
 
 
@@ -386,10 +451,24 @@ body {
 
 
 
-<div class="footer">
+  <footer>
+    <div class="footer-content">
+      <h3>Archiratering Life</h3>
 
-  <p>Copyright © 2023 Archiratering Life Inc. All rights reserved</p>
-</div>
+      <ul class="socials">
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-tiktok"></i></li>
+        <li><i class="fa-brands fa-discord"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2023 Archiratering Life Inc. All rights reserved</p>
+    </div>
+  </footer>
+
 
 
 </body>
